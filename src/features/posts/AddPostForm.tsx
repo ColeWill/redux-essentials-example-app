@@ -1,7 +1,7 @@
 import React from 'react'
 import { nanoid } from '@reduxjs/toolkit'
 import { useAppDispatch } from '@/app/hooks'
-import { type Post, postAdded } from '../../app/postsSlice'
+import { type Post, postAdded } from './postsSlice'
 
 interface AddPostFormFields extends HTMLFormControlsCollection {
   postTitle: HTMLInputElement
@@ -37,7 +37,7 @@ export const AddPostForm = () => {
         <input type="text" id="postTitle" defaultValue="" required />
         <label htmlFor="postContent">Content:</label>
         <textarea name="postContent" id="postContent" defaultValue={''} required></textarea>
-        <button>Save Post</button>
+        <button className="button">Save Post</button>
       </form>
     </section>
   )
