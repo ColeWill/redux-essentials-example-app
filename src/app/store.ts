@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import type { Action } from '@reduxjs/toolkit'
-import postsReducer from '@/features/posts/postsSlice'
+import postsReducer from '@/app/postsSlice'
 
 interface CounterState {
   value: number
