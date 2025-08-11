@@ -3,7 +3,6 @@ import { useAppSelector } from '@/app/hooks'
 
 export const SinglePostPage = () => {
   const { postId } = useParams()
-
   const post = useAppSelector((state) => state.posts.find((post) => post.id === postId))
 
   if (!post) {
